@@ -1,6 +1,5 @@
 get '/' do
-  # Allow user to create short URLs.
-  # Display a list of shortened URLs.
+  erb :index
 end
 
 post '/urls' do

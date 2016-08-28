@@ -1,0 +1,15 @@
+canvas {
+  background: #fceadb;
+  display: block;
+  margin: 0 auto;
+
+  }
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Futura;
+}
