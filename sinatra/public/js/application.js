@@ -14,6 +14,7 @@ var x = canvas.width * .5;
 var y = canvas.height - 30;
 var dx = -1;
 var dy = -2;
+var color = "blue"
 
 function drawBall(color) {
   var ballRadius = 10;
@@ -27,19 +28,13 @@ function drawBall(color) {
 
 function draw() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
-  // var color
-  // console.log(color)
-  var color = "blue" || newColor
-  // color += "#"
   drawBall(color);
   x += dx;
   y += dy;
   // subtract the ballRadius if we want change direction to happen on contact instead of at center of ball
   if (y + dy < 0 || y + dy > canvas.height) {
     dy = -dy;
-    var newColor = changeColor();
-    console.log(color)
-
+    color = changeColor();
   }
   if (x + dx < 0 || x + dx > canvas.width) {
     dx = -dx;
