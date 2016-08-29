@@ -1,0 +1,28 @@
+/* Note: This is the only property you need to set on the parent container and all its immediate children will become automatically flex items. */
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    width: 500px;
+    height: 500px;
+    background-color: #f4efef;
+    flex-wrap:  wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border-radius: 10px;
+    margin: auto;
+}
+
+
+.flex-item {
+    border: 5px solid #dbd6d6;
+    border-radius: 5px;
+    background-color: #d0e2e8;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+
+}
+
+
